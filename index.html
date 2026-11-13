@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Susan's Cakes</title>
+<meta name="description" content="Homemade Christmas plum cakes and butter cakes. Order on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600&family=Fraunces:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css"><link rel="stylesheet" href="css/styles.css">
+</head><body>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="#top"><img id="logo" alt="" hidden><span class="hat" id="logoIcon" data-icon="chef" data-size="24"></span><span data-shop></span></a>
+  <nav><a href="#menu-s">Menu</a><a href="#how">How it works</a><a href="#order">Order</a><a href="#pay">Pay</a></nav>
+</div></header>
+
+<section class="hero" id="top">
+  <div class="lights"></div><div id="snow" aria-hidden="true"></div>
+  <div class="wrap">
+    <div><h1>Taking orders for Christmas</h1><p id="tagline"></p>
+      <div class="cta"><a class="btn btn-gold" href="#order"><span data-icon="cake" data-size="20"></span> Pre-book now</a>
+        <a class="btn btn-line" data-wa target="_blank" rel="noopener"><span data-icon="whatsapp" data-size="20"></span> Chat on WhatsApp</a></div></div>
+    <div class="art"><img src="images/plum.svg" alt="Christmas plum cake" width="420" height="420"></div>
+  </div>
+</section>
+
+<section><div class="wrap"><h2 class="title reveal">Why customers love us</h2><p class="sub reveal">Small batches, big flavour.</p>
+  <div class="grid" id="features"></div></div></section>
+
+<section class="alt" id="menu-s"><div class="wrap"><h2 class="title reveal">Our cakes</h2><p class="sub reveal">Tap a cake to start your order.</p>
+  <div class="grid" id="menu"></div><p class="note" id="allergen" style="text-align:center;margin-top:20px"></p></div></section>
+
+<section id="how"><div class="wrap"><h2 class="title reveal">How to order</h2><p class="sub reveal">Four simple steps.</p>
+  <div class="steps" id="steps"></div></div></section>
+
+<section class="alt" id="order"><div class="wrap"><h2 class="title reveal">Book your order</h2><p class="sub reveal">We'll confirm on WhatsApp.</p>
+  <div class="card panel reveal">
+    <label for="name">Your name</label><input id="name" autocomplete="name">
+    <label for="cake">Cake</label><select id="cake"></select>
+    <label for="size">Size</label><select id="size"></select>
+    <label for="qty">Quantity</label><input id="qty" type="number" min="1" value="1">
+    <label for="date">Date needed</label><input id="date" type="date"><p class="note" id="dateNote"></p>
+    <label for="notes">Message on cake / notes</label><textarea id="notes" rows="2"></textarea>
+    <div id="total"></div>
+    <button class="btn btn-green" id="send" type="button"><span data-icon="whatsapp" data-size="20"></span> Send order on WhatsApp</button>
+    <p class="note" id="delivery"></p>
+  </div></div></section>
+
+<section id="pay"><div class="wrap"><h2 class="title reveal">Pay by UPI</h2><p class="sub reveal">Scan the QR or copy the UPI ID.</p>
+  <div class="card panel pay reveal">
+    <div class="qrbox"><img id="qr" alt="UPI QR code" hidden><div id="qrEmpty"><span data-icon="qr" data-size="40"></span><br>Your QR will appear here</div></div>
+    <div><p>UPI ID</p><p class="upi" id="upi"></p>
+      <button class="btn btn-green" id="copy" type="button"><span data-icon="copy" data-size="18"></span> Copy UPI ID</button>
+      <p class="note" id="advance"></p></div>
+  </div></div></section>
+
+<footer>© <span data-shop></span> · Homemade with love</footer>
+<a class="fab" data-wa target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><span data-icon="whatsapp" data-size="28"></span></a>
+<div id="toast" role="status"></div>
+<script type="module" src="js/main.js"></script>
+</body></html>

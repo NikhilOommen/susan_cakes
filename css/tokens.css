@@ -1,0 +1,13 @@
+:root{
+  --wine:#6e1423; --wine-d:#3a0912; --pine:#1d4d3a; --gold:#d9b25f; --gold-l:#f0d898;
+  --cream:#fff8ea; --ink:#2b1a16; --r:20px;
+  --shadow:0 12px 32px rgba(58,9,18,.16);
+  --font-d:'Fraunces',Georgia,serif; --font-b:'DM Sans',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-b);background:var(--cream);color:var(--ink);line-height:1.6;overflow-x:hidden}
+h1,h2,h3{font-family:var(--font-d);line-height:1.15}
+img{max-width:100%;display:block}
+a{color:inherit}
+[hidden]{display:none!important}
